@@ -34,7 +34,7 @@ mongoose
     });
 passportAuthenticator(passport, user);
 app.use(express.json());
-app.use("/peerjs", peerServer);
+// app.use("/peerjs", peerServer);
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: false }));
 app.use(cookie({ maxAge: 30 * 24 * 60 * 60 * 1000, keys: ["soumenkhara"] }));

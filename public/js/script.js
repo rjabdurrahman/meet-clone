@@ -17,9 +17,9 @@ const socket = io("/");
 const videoGrid = document.getElementById("video-grid");
 // const name = prompt("Your name");
 const myPeer = new Peer(undefined, {
-    path: "/peerjs",
-    host: "/",
-    port: "3000",
+    path: "/my_peer",
+    host: "stun.admissionsassist.com",
+    port: "5000",
 });
 var Peer_ID;
 const myVideo = document.createElement("video");
